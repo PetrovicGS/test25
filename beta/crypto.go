@@ -70,7 +70,7 @@ func HashData(kh KeccakState, data []byte) (h common.Hash) {
 	kh.Write(data)
 	kh.Read(h[:])
 	return h
-}
+}.
 
 // Keccak256 calculates and returns the Keccak256 hash of the input data.
 func Keccak256(data ...[]byte) []byte {
